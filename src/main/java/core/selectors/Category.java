@@ -6,11 +6,13 @@ public enum Category {
   PRIVILEGED("Особое право");
 
   private String value;
-  public String getValue(){
-    return value;
+
+  private Category(String value) {
+    this.value = value;
   }
-  private Category(String value){
-    this.value=value;
+
+  public String getValue() {
+    return value;
   }
 
 }

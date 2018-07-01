@@ -5,10 +5,12 @@ public enum Funding {
   PRIVATE("Контракт");
 
   private String value;
-  public String getValue(){
-    return value;
+
+  private Funding(String value) {
+    this.value = value;
   }
-  private Funding(String value){
-    this.value=value;
+
+  public String getValue() {
+    return value;
   }
 }

@@ -14,10 +14,12 @@ public enum Department {
   IPPT("Институт передовых производственных технологий");
 
   private String value;
-  public String getValue(){
-    return value;
+
+  private Department(String value) {
+    this.value = value;
   }
-  private Department(String value){
-    this.value=value;
+
+  public String getValue() {
+    return value;
   }
 }

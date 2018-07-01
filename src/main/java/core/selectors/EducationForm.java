@@ -7,10 +7,12 @@ public enum EducationForm {
 
 
   private String value;
-  public String getValue(){
-    return value;
+
+  private EducationForm(String value) {
+    this.value = value;
   }
-  private EducationForm(String value){
-    this.value=value;
+
+  public String getValue() {
+    return value;
   }
 }

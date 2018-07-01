@@ -5,10 +5,12 @@ public enum Level {
   MASTER("Магистратура");
 
   private String value;
-  public String getValue(){
-    return value;
+
+  private Level(String value) {
+    this.value = value;
   }
-  private Level(String value){
-    this.value=value;
+
+  public String getValue() {
+    return value;
   }
 }
