@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +34,7 @@ public class ScrapedData {
   public void toCSV(String fileName) {
     try {
       File file = new File(fileName);
-      if (file.exists()) {
-        file.delete();
-      }
+      Files.deleteIfExists(file.toPath());
       Writer fw = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
       String header = "Программа\tФорма обучения\tФинансирование\tИнститут\tНаправление\tФИО,\tБаллы\tОригинал\tСогласие\n";
       fw.write(header);

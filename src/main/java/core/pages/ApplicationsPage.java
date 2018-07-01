@@ -31,8 +31,6 @@ public class ApplicationsPage extends PageBase {
   public static final By CATEGORY = By.name("zcat");
   public static final By ORIGINAL = By.name("original");
   public static final By TABLE = By.className("table-abit-list");
-  public static final By TABLE_ROW = By.xpath("//tbody/tr");
-  public static final By TABLE_FIELD = By.xpath("//td");
 
 
   public ApplicationsPage(WebDriver driver) {

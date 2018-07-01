@@ -13,9 +13,9 @@ public enum Department {
   VSHBTIPT("Высшая школа биотехнологии и пищевых технологий"),
   IPPT("Институт передовых производственных технологий");
 
-  private String value;
+  private final String value;
 
-  private Department(String value) {
+  Department(String value) {
     this.value = value;
   }
 

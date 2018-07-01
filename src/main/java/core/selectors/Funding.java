@@ -4,9 +4,9 @@ public enum Funding {
   STATE("Бюджет"),
   PRIVATE("Контракт");
 
-  private String value;
+  private final String value;
 
-  private Funding(String value) {
+  Funding(String value) {
     this.value = value;
   }
 

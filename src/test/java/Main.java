@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
 
   public static void main(String[] args) {
+    System.setProperty("webdriver.chrome.driver",
+        "C:\\Program Files\\Java\\lib\\ChromeDriver\\chromedriver.exe"); //set this to your actual chromedriver location
     while (true) {
       System.out.println("Select an option:");
       System.out.println("1. Scrape all Masters applications into a file");

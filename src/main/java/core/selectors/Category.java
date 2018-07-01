@@ -5,9 +5,9 @@ public enum Category {
   TARGETED("Целевые места"),
   PRIVILEGED("Особое право");
 
-  private String value;
+  private final String value;
 
-  private Category(String value) {
+  Category(String value) {
     this.value = value;
   }
 

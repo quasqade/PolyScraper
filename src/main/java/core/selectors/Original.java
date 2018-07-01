@@ -5,9 +5,9 @@ public enum Original {
   ORIGINAL("Оригинал"),
   COPY("Копия");
 
-  private String value;
+  private final String value;
 
-  private Original(String value) {
+  Original(String value) {
     this.value = value;
   }
 

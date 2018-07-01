@@ -4,9 +4,9 @@ public enum Level {
   BACHELOR("Бакалавриат/Специалитет"),
   MASTER("Магистратура");
 
-  private String value;
+  private final String value;
 
-  private Level(String value) {
+  Level(String value) {
     this.value = value;
   }
 

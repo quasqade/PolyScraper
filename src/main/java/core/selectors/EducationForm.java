@@ -6,9 +6,9 @@ public enum EducationForm {
   CORRESPONDENCE("Заочная");
 
 
-  private String value;
+  private final String value;
 
-  private EducationForm(String value) {
+  EducationForm(String value) {
     this.value = value;
   }
 
